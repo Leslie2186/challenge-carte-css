@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'*/
 import './assets/salameche.gif'
 import './assets/reptincel.gif'
 import './assets/dracaufeu.gif'
-import './assets/leslie.jpg'
+import './assets/dahlia.jpg'
 import './App.css'
 import ContainerCard from './components/ContainerCard'
 
@@ -31,7 +31,7 @@ const profil = {
   name: "Leslie",
   lastname: "Pellegrin Moraud",
   age: "36 ans",
-  image: '../src/assets/leslie.jpg',
+  image: '../src/assets/dahlia.jpg',
   metier: "Développeuse web fullstask",
   mail: "devweb@gmail.com",
 }

@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 const Container = styled.div`
     border-radius: 10px;
-    background-color: #f08080;
+    background-color: #48d1cc;
     padding : 10px;
-    width: 400px;
     box-shadow: -10px 10px 5px grey;
+    margin-top: 20px;
 `;
 
 const List = styled.ul`
