@@ -1,34 +1,39 @@
-import { useState } from 'react'
+/*import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import viteLogo from '/vite.svg'*/
+import './assets/salameche.gif'
+import './assets/reptincel.gif'
+import './assets/dracaufeu.gif'
 import './App.css'
+import ContainerCard from './components/ContainerCard'
 
-function App() {
-  const [count, setCount] = useState(0)
+const cardPokemon = {
+  name : "Salamèche",
+  image: '../src/assets/salameche.gif',
+  type : {
+    nameType: "Feu",
+    imgSrc : "https://static.wikia.nocookie.net/pokemongo/images/3/30/Fire.png",
+  },
+  evolution : {
+    medium: {
+      nameMedium : "Reptincel",
+      imgMedium:  '../src/assets/reptincel.gif',
+    },
+    large: {
+      nameLarge : "Dracaufeu",
+      imgLarge : '../src/assets/dracaufeu.gif',
+    }
+  }
+};
+
+
+const App = () => {
+  /*const [count, setCount] = useState(0)*/
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      < ContainerCard cardPokemon={cardPokemon}/>
+    </div>
   )
 }
 
