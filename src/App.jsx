@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'*/
 import './assets/salameche.gif'
 import './assets/reptincel.gif'
 import './assets/dracaufeu.gif'
+import './assets/leslie.jpg'
 import './App.css'
 import ContainerCard from './components/ContainerCard'
 
@@ -26,13 +27,22 @@ const cardPokemon = {
   }
 };
 
+const profil = {
+  name: "Leslie",
+  lastname: "Pellegrin Moraud",
+  age: "36 ans",
+  image: '../src/assets/leslie.jpg',
+  metier: "Développeuse web fullstask",
+  mail: "devweb@gmail.com",
+}
+
 
 const App = () => {
   /*const [count, setCount] = useState(0)*/
 
   return (
     <div>
-      < ContainerCard cardPokemon={cardPokemon}/>
+      < ContainerCard cardPokemon={cardPokemon} profil={profil}/>
     </div>
   )
 }
